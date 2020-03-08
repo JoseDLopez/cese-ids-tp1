@@ -33,7 +33,7 @@ typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
     char documento[11];
-} const * alumno_t;
+} const * alumno_t; //!< Alumn structure mold with features
 
 /*=====[Definitions of public global variables]==============================*/
 

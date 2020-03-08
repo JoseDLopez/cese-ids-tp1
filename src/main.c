@@ -35,7 +35,11 @@
 /*=====[Implementations of private functions]================================*/
 
 int main(int argc, char *argv[]) {
-    char cadena[256];
+	/**
+	 * Main function that loops and uses SerializarAlumnos to print if there is
+	 * alumns or not
+	 */
+    char cadena[256]; //!< chain variable that allows to print alumns
 
     if (SerializarAlumnos(cadena, sizeof(cadena), ALUMNOS, CANTIDAD_ALUMNOS)) {
         printf("Listado total de alumnos: %s\r\n", cadena);

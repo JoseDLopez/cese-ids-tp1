@@ -29,13 +29,13 @@ static const struct alumno_s JOSE_LOPEZ = {
         .apellidos = "LOPEZ",
         .nombres = "José Daniel",
         .documento = "20.010.452",
-    };
+    }; //!< Create alumn José López following alumn structure
 
 const alumno_t ALUMNOS[] = {
     &JOSE_LOPEZ,
 };
 
-const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
+const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t)); //!< Constant alumns quantity creation following size of alumns array
 
 /*=====[Definitions of private global variables]=============================*/
 
@@ -46,6 +46,11 @@ const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 /*=====[Implementations of interrupt functions]==============================*/
 
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
+    /**
+     * With the received alumn it returns its properties and creates an string with information
+     * in json format.
+     * @return return json with information
+     */
     int resultado;
     const char FORMATO[] = "{"
         "\"documento\":\"%s\","
@@ -60,6 +65,10 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
 }
 
 bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad) {
+    /**
+     * For each alumn it uses SerializarAlumno function to receive json with information and
+     * then print each alumn.
+     */
     int posicion = snprintf(cadena, espacio, "[\r\n  ");
     bool resultado = (posicion > 0);
 
