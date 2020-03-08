@@ -1,0 +1,78 @@
+\hypertarget{alumnos_8c}{}\section{Referencia del Archivo src/alumnos.c}
+\label{alumnos_8c}\index{src/alumnos.\+c@{src/alumnos.\+c}}
+{\ttfamily \#include \char`\"{}alumnos.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{alumnos_8c_a94d19b92fc92e35f30662e321356326a}{Serializar\+Alumno} (char $\ast$cadena, size\+\_\+t espacio, const alumno\+\_\+t alumno)
+\item 
+bool \hyperlink{alumnos_8c_a04d0b9e50c126d1507f936f7d51b98f1}{Serializar\+Alumnos} (char $\ast$cadena, size\+\_\+t espacio, const alumno\+\_\+t alumnos\mbox{[}$\,$\mbox{]}, int cantidad)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const alumno\+\_\+t \hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS} \mbox{[}$\,$\mbox{]}
+\item 
+const int \hyperlink{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS} = (sizeof(\hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS}) / sizeof(alumno\+\_\+t))
+\begin{DoxyCompactList}\small\item\em Constant alumns quantity creation following size of alumns array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{alumnos_8c_a94d19b92fc92e35f30662e321356326a}\label{alumnos_8c_a94d19b92fc92e35f30662e321356326a}} 
+\index{alumnos.\+c@{alumnos.\+c}!Serializar\+Alumno@{Serializar\+Alumno}}
+\index{Serializar\+Alumno@{Serializar\+Alumno}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection{\texorpdfstring{Serializar\+Alumno()}{SerializarAlumno()}}
+{\footnotesize\ttfamily bool Serializar\+Alumno (\begin{DoxyParamCaption}\item[{char $\ast$}]{cadena,  }\item[{size\+\_\+t}]{espacio,  }\item[{const alumno\+\_\+t}]{alumno }\end{DoxyParamCaption})}
+
+With the received alumn it returns its properties and creates an string with information in json format. \begin{DoxyReturn}{Devuelve}
+return json with information
+\end{DoxyReturn}
+
+
+Definición en la línea 48 del archivo alumnos.\+c.
+
+\mbox{\Hypertarget{alumnos_8c_a04d0b9e50c126d1507f936f7d51b98f1}\label{alumnos_8c_a04d0b9e50c126d1507f936f7d51b98f1}} 
+\index{alumnos.\+c@{alumnos.\+c}!Serializar\+Alumnos@{Serializar\+Alumnos}}
+\index{Serializar\+Alumnos@{Serializar\+Alumnos}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection{\texorpdfstring{Serializar\+Alumnos()}{SerializarAlumnos()}}
+{\footnotesize\ttfamily bool Serializar\+Alumnos (\begin{DoxyParamCaption}\item[{char $\ast$}]{cadena,  }\item[{size\+\_\+t}]{espacio,  }\item[{const alumno\+\_\+t}]{alumnos\mbox{[}$\,$\mbox{]},  }\item[{int}]{cantidad }\end{DoxyParamCaption})}
+
+For each alumn it uses Serializar\+Alumno function to receive json with information and then print each alumn.
+
+Definición en la línea 67 del archivo alumnos.\+c.
+
+
+
+\subsection{Documentación de las variables}
+\mbox{\Hypertarget{alumnos_8c_ac069805169418a8efebf22c025e195c5}\label{alumnos_8c_ac069805169418a8efebf22c025e195c5}} 
+\index{alumnos.\+c@{alumnos.\+c}!A\+L\+U\+M\+N\+OS@{A\+L\+U\+M\+N\+OS}}
+\index{A\+L\+U\+M\+N\+OS@{A\+L\+U\+M\+N\+OS}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection{\texorpdfstring{A\+L\+U\+M\+N\+OS}{ALUMNOS}}
+{\footnotesize\ttfamily const alumno\+\_\+t A\+L\+U\+M\+N\+OS\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}
+= \{
+    &JOSE\_LOPEZ,
+\}
+\end{DoxyCode}
+
+
+Definición en la línea 34 del archivo alumnos.\+c.
+
+\mbox{\Hypertarget{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}\label{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}} 
+\index{alumnos.\+c@{alumnos.\+c}!C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS@{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS}}
+\index{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS@{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection{\texorpdfstring{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS}{CANTIDAD\_ALUMNOS}}
+{\footnotesize\ttfamily const int C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS = (sizeof(\hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS}) / sizeof(alumno\+\_\+t))}
+
+
+
+Constant alumns quantity creation following size of alumns array. 
+
+
+
+Definición en la línea 38 del archivo alumnos.\+c.
+

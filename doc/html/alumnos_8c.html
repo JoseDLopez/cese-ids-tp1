@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica 01 José López: Referencia del Archivo src/alumnos.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica 01 José López
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">First project documentation</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo alumnos.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;alumnos.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="alumnos_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a94d19b92fc92e35f30662e321356326a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#a94d19b92fc92e35f30662e321356326a">SerializarAlumno</a> (char *cadena, size_t espacio, const alumno_t alumno)</td></tr>
+<tr class="separator:a94d19b92fc92e35f30662e321356326a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d0b9e50c126d1507f936f7d51b98f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#a04d0b9e50c126d1507f936f7d51b98f1">SerializarAlumnos</a> (char *cadena, size_t espacio, const alumno_t alumnos[], int cantidad)</td></tr>
+<tr class="separator:a04d0b9e50c126d1507f936f7d51b98f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac069805169418a8efebf22c025e195c5"><td class="memItemLeft" align="right" valign="top">const alumno_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#ac069805169418a8efebf22c025e195c5">ALUMNOS</a> []</td></tr>
+<tr class="separator:ac069805169418a8efebf22c025e195c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0b22baac6dc7d0cf8e13559d500ba8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#a3e0b22baac6dc7d0cf8e13559d500ba8">CANTIDAD_ALUMNOS</a> = (sizeof(<a class="el" href="alumnos_8c.html#ac069805169418a8efebf22c025e195c5">ALUMNOS</a>) / sizeof(alumno_t))</td></tr>
+<tr class="memdesc:a3e0b22baac6dc7d0cf8e13559d500ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant alumns quantity creation following size of alumns array.  <a href="#a3e0b22baac6dc7d0cf8e13559d500ba8">Más...</a><br /></td></tr>
+<tr class="separator:a3e0b22baac6dc7d0cf8e13559d500ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a94d19b92fc92e35f30662e321356326a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94d19b92fc92e35f30662e321356326a">&#9670;&nbsp;</a></span>SerializarAlumno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerializarAlumno </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cadena</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>espacio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const alumno_t&#160;</td>
+          <td class="paramname"><em>alumno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>With the received alumn it returns its properties and creates an string with information in json format. </p><dl class="section return"><dt>Devuelve</dt><dd>return json with information</dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="alumnos_8c_source.html#l00048">48</a> del archivo <a class="el" href="alumnos_8c_source.html">alumnos.c</a>.</p>
+
+</div>
+</div>
+<a id="a04d0b9e50c126d1507f936f7d51b98f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d0b9e50c126d1507f936f7d51b98f1">&#9670;&nbsp;</a></span>SerializarAlumnos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerializarAlumnos </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cadena</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>espacio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const alumno_t&#160;</td>
+          <td class="paramname"><em>alumnos</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cantidad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For each alumn it uses SerializarAlumno function to receive json with information and then print each alumn.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="alumnos_8c_source.html#l00067">67</a> del archivo <a class="el" href="alumnos_8c_source.html">alumnos.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ac069805169418a8efebf22c025e195c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac069805169418a8efebf22c025e195c5">&#9670;&nbsp;</a></span>ALUMNOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const alumno_t ALUMNOS[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div><div class="line">    &amp;JOSE_LOPEZ,</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="alumnos_8c_source.html#l00034">34</a> del archivo <a class="el" href="alumnos_8c_source.html">alumnos.c</a>.</p>
+
+</div>
+</div>
+<a id="a3e0b22baac6dc7d0cf8e13559d500ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0b22baac6dc7d0cf8e13559d500ba8">&#9670;&nbsp;</a></span>CANTIDAD_ALUMNOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CANTIDAD_ALUMNOS = (sizeof(<a class="el" href="alumnos_8c.html#ac069805169418a8efebf22c025e195c5">ALUMNOS</a>) / sizeof(alumno_t))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constant alumns quantity creation following size of alumns array. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="alumnos_8c_source.html#l00038">38</a> del archivo <a class="el" href="alumnos_8c_source.html">alumnos.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
