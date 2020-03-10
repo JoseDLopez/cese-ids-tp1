@@ -41,10 +41,14 @@ int main(int argc, char *argv[]) {
 	 */
     char cadena[256]; //!< chain variable that allows to print alumns
 
+    //! Conditional that check if it is possible to serialize alumn.
+    /*!
+      This conditional check if the alumn can be serialized and if so, return the qty of alumns serialized or returns message showing that is not possible to serialize.
+    */
     if (SerializarAlumnos(cadena, sizeof(cadena), ALUMNOS, CANTIDAD_ALUMNOS)) {
-        printf("Listado total de alumnos: %s\r\n", cadena);
+        printf("Listado total de alumnos: %s\r\n", cadena); /*!< Message that shows total of alumns serialized successfully */
     } else {
-        printf("No se pudo serializar un alumno\r\n");
+        printf("No se pudo serializar un alumno\r\n");/*!< Message delivered when is not possible to serialize an alumn. */
     }
     return 0;
 }

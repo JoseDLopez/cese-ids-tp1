@@ -24,16 +24,17 @@
 /*=====[Definitions of external public global variables]=====================*/
 
 /*=====[Definitions of public global variables]==============================*/
-
+//! Const structure of alumn José López.
+/*! More detailed  description. */
 static const struct alumno_s JOSE_LOPEZ = {
-        .apellidos = "LOPEZ",
-        .nombres = "José Daniel",
-        .documento = "20.010.452",
+        .apellidos = "LOPEZ", /*!< lastname value of alumn. */
+        .nombres = "José Daniel", /*!< first and second name value of alumn. */
+        .documento = "20.010.452", /*!< document value of alumn. */
     }; //!< Create alumn José López following alumn structure
 
 const alumno_t ALUMNOS[] = {
-    &JOSE_LOPEZ,
-};
+    &JOSE_LOPEZ, /*!< alumn added to array. */
+}; //!< const array for alumns and declaration which alumns has inside
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t)); //!< Constant alumns quantity creation following size of alumns array
 
@@ -51,17 +52,17 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
      * in json format.
      * @return return json with information
      */
-    int resultado;
+    int resultado; /*!< declaration of resultado */
     const char FORMATO[] = "{"
         "\"documento\":\"%s\","
         "\"apellidos\":\"%s\","
         "\"nombres\":\"%s\""
-    "}";
+    "}"; /*!< Function that gives format to char to return. */
 
     resultado = snprintf(cadena, espacio, FORMATO, 
-             alumno->documento, alumno->apellidos, alumno->nombres);
+             alumno->documento, alumno->apellidos, alumno->nombres); /*!< set resultado value with alumn serialized. */
 
-    return (resultado >= 0);
+    return (resultado >= 0); /*!< Return of the size of serialized alumn. */
 }
 
 bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad) {
@@ -85,7 +86,7 @@ bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], 
     }
 
     snprintf(&cadena[posicion] - 5, espacio - posicion + 5, "\r\n]");
-    return resultado;
+    return resultado; /*!< return true or false of resultado. */
 }
 
 /*=====[Implementations of private functions]================================*/

@@ -30,22 +30,22 @@ extern "C" {
 /*=====[Definitions of public data types]====================================*/
 
 typedef struct alumno_s {
-    char apellidos[30];
-    char nombres[30];
-    char documento[11];
+    char apellidos[30]; //!< Lastname char definition
+    char nombres[30]; //!< first and second names char definition
+    char documento[11]; //!< Document definition
 } const * alumno_t; //!< Alumn structure mold with features
 
 /*=====[Definitions of public global variables]==============================*/
 
-extern const alumno_t ALUMNOS[];
+extern const alumno_t ALUMNOS[]; //!< Alumn array constant definition
 
-extern const int CANTIDAD_ALUMNOS;
+extern const int CANTIDAD_ALUMNOS; //!< Alumn quantity constant definition
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
-bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
+bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno); //!< Public function for serialize unique alumn
 
-bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad);
+bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad); //!< Public function for serialize every alumn.
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
 
